@@ -1,0 +1,1574 @@
+2024-02-16 17:39:06,483 [INFO] shopapp.views: Rendering shop index
+2024-02-16 17:39:26,462 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/django_skillbox/settings.py changed, reloading.
+2024-02-16 18:13:37,666 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-16 18:14:01,456 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/django_skillbox/urls.py changed, reloading.
+2024-02-16 18:14:01,727 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-16 18:14:07,103 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-16 18:15:31,043 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/django_skillbox/settings.py changed, reloading.
+2024-02-16 18:15:31,415 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-16 18:17:28,371 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-16 18:20:11,859 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-16 18:27:59,890 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-16 18:28:43,960 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/django_skillbox/settings.py changed, reloading.
+2024-02-16 18:28:44,300 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-16 18:29:17,358 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/django_skillbox/settings.py changed, reloading.
+2024-02-16 18:29:17,675 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-16 18:29:28,052 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-16 18:35:59,028 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-16 18:39:18,494 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/django_skillbox/settings.py changed, reloading.
+2024-02-16 18:39:52,583 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-16 18:40:48,759 [WARNING] django.request: Not Found: /favicon.ico
+2024-02-16 18:41:19,726 [WARNING] django.request: Not Found: /ru/orders
+2024-02-18 14:51:41,826 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 14:51:47,075 [WARNING] django.request: Not Found: /favicon.ico
+2024-02-18 17:28:13,239 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 17:29:16,015 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 17:29:21,281 [INFO] shopapp.views: Rendering shop index
+2024-02-18 17:29:21,398 [ERROR] django.request: Internal Server Error: /shop/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/shopapp/views.py", line 90, in get
+    return render(request, 'shopapp/templates/shopapp/shop-index.html', context=context)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: shopapp/templates/shopapp/shop-index.html
+2024-02-18 17:29:22,732 [ERROR] django.request: Internal Server Error: /shop/products/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: shopapp/templates/shopapp/products-list.html, shopapp/product_list.html
+2024-02-18 17:29:23,028 [ERROR] django.request: Internal Server Error: /shop/products/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: shopapp/templates/shopapp/products-list.html, shopapp/product_list.html
+2024-02-18 17:29:56,042 [ERROR] django.request: Internal Server Error: /myauth/about-me
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myauth/templates/myauth/about-me.html
+2024-02-18 17:29:58,019 [ERROR] django.request: Internal Server Error: /myauth/about-me
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myauth/templates/myauth/about-me.html
+2024-02-18 17:39:08,601 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 17:39:13,723 [WARNING] django.request: Not Found: /favicon.ico
+2024-02-18 17:39:16,476 [WARNING] django.request: Not Found: /favicon.ico
+2024-02-18 17:39:57,013 [ERROR] django.request: Internal Server Error: /shop/products/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: shopapp/templates/shopapp/products-list.html, shopapp/product_list.html
+2024-02-18 17:47:50,969 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-18 17:47:51,282 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-18 17:50:27,188 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/requestdataapp/views.py changed, reloading.
+2024-02-18 17:50:27,456 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 10:02:25,995 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 10:02:30,346 [WARNING] django.request: Not Found: /
+2024-02-19 10:02:30,665 [WARNING] django.request: Not Found: /favicon.ico
+2024-02-19 10:02:34,023 [WARNING] django.request: Not Found: /favicon.ico
+2024-02-19 10:07:22,303 [ERROR] django.request: Internal Server Error: /myauth/about-me
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myauth/templates/myauth/about-me.html
+2024-02-19 10:07:23,389 [ERROR] django.request: Internal Server Error: /myauth/about-me
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myauth/templates/myauth/about-me.html
+2024-02-19 10:07:36,062 [INFO] shopapp.views: Rendering shop index
+2024-02-19 10:07:52,757 [ERROR] django.request: Internal Server Error: /myauth/about-me
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myauth/templates/myauth/about-me.html
+2024-02-19 10:07:57,059 [ERROR] django.request: Internal Server Error: /myauth/login/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myauth/templates/myauth/login.html
+2024-02-19 10:08:33,965 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/myauth/views.py changed, reloading.
+2024-02-19 10:08:34,315 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 10:08:36,355 [ERROR] django.request: Internal Server Error: /myauth/login/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myauth/templates/myauth/login.html
+2024-02-19 10:08:37,505 [ERROR] django.request: Internal Server Error: /myauth/login/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myauth/templates/myauth/login.html
+2024-02-19 10:10:24,970 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/myauth/views.py changed, reloading.
+2024-02-19 10:10:25,418 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 10:10:47,019 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 10:11:08,662 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/myauth/urls.py changed, reloading.
+2024-02-19 10:11:09,154 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 10:11:23,636 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/myauth/urls.py changed, reloading.
+2024-02-19 10:11:24,044 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 10:11:27,394 [ERROR] django.request: Internal Server Error: /myauth/login/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myauth/templates/myauth/login.html
+2024-02-19 10:11:46,993 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/myauth/urls.py changed, reloading.
+2024-02-19 10:11:47,375 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 10:12:02,414 [ERROR] django.request: Internal Server Error: /myauth/update/2/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/edit.py", line 201, in get
+    self.object = self.get_object()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/detail.py", line 37, in get_object
+    queryset = queryset.filter(pk=pk)
+AttributeError: 'Profile' object has no attribute 'filter'
+2024-02-19 11:29:14,555 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 11:29:28,454 [INFO] shopapp.views: Rendering shop index
+2024-02-19 11:29:42,425 [WARNING] django.request: Not Found: /shop/products/export
+2024-02-19 11:29:42,486 [WARNING] django.request: Not Found: /favicon.ico
+2024-02-19 11:31:11,139 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-19 11:31:11,673 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 11:31:36,314 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-19 11:31:36,954 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 11:31:41,142 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-19 11:31:41,482 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 11:31:50,753 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-19 11:31:51,316 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 11:32:04,678 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-19 11:32:05,071 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 11:32:10,373 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-19 11:32:10,850 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 11:32:14,009 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-19 11:32:14,287 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 11:32:26,827 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-19 11:32:27,226 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 11:32:36,503 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-19 11:32:36,934 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 11:32:58,376 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-19 11:32:58,744 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 11:33:12,130 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-19 11:33:12,395 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 11:33:22,795 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-19 11:33:23,192 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 11:33:47,002 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-19 11:33:47,370 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 11:34:01,794 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-19 11:34:02,147 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 11:34:11,613 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-19 11:34:11,921 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 11:34:22,257 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-19 11:34:22,623 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 11:34:28,858 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-19 11:34:29,242 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 11:34:34,490 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-19 11:34:34,920 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 11:34:44,384 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-19 11:34:44,719 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 11:34:53,004 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-19 11:34:53,343 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 11:34:59,728 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-19 11:35:00,238 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 11:35:05,590 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-19 11:35:05,972 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 11:35:30,650 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-19 11:35:30,892 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 11:36:51,763 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/urls.py changed, reloading.
+2024-02-19 11:36:52,157 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 11:37:14,775 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-19 11:37:15,226 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 11:37:20,468 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-19 11:37:20,853 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 11:37:26,186 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-19 11:37:26,516 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 11:37:32,763 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-19 11:37:33,161 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 11:37:42,642 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-19 11:37:43,045 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 11:37:45,282 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-19 11:37:45,758 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 11:38:41,318 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-19 11:38:41,714 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 11:38:51,370 [ERROR] django.request: Internal Server Error: /shop/products/export/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/shopapp/views.py", line 272, in get
+    name = elem['naem']
+KeyError: 'naem'
+2024-02-19 13:51:44,273 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 13:58:36,212 [WARNING] django.request: Not Found: /favicon.ico
+2024-02-19 14:20:02,352 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-19 14:20:02,976 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 14:20:09,379 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-19 14:20:09,802 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 14:20:12,148 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-19 14:20:12,604 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 14:20:18,046 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-19 14:20:18,546 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 14:20:24,934 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-19 14:20:25,411 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 14:20:28,749 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-19 14:20:29,322 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 14:32:22,700 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-19 14:32:23,004 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 14:32:26,220 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-19 14:32:26,466 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 14:32:29,656 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-19 14:32:29,944 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 14:32:54,417 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-19 14:32:54,659 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 14:33:05,916 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-19 14:33:06,181 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 14:33:21,447 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-19 14:33:21,727 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 14:33:27,960 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-19 14:33:28,535 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 14:33:32,747 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-19 14:33:32,982 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 14:33:42,289 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-19 14:33:42,619 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 14:33:47,893 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-19 14:33:48,190 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 14:33:51,390 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-19 14:33:51,628 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-19 14:33:53,811 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-19 14:33:54,114 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-20 15:11:36,448 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-20 15:12:26,968 [ERROR] django.request: Internal Server Error: /admin/shopapp/product/import-products-csv/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py", line 92, in import_csv
+    products = [
+  File "/home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py", line 93, in <listcomp>
+    Product(**row)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Product() got unexpected keyword arguments: ' description', ' price', ' discount'
+2024-02-20 15:12:27,164 [WARNING] django.request: Not Found: /favicon.ico
+2024-02-20 15:13:58,417 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-20 15:13:58,944 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-20 15:14:01,200 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-20 15:14:01,584 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-20 15:14:05,979 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-20 15:14:06,392 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-20 15:15:36,933 [ERROR] django.request: Internal Server Error: /admin/shopapp/product/import-products-csv/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py", line 93, in import_csv
+    products = [
+  File "/home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py", line 94, in <listcomp>
+    Product(**row)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Product() got unexpected keyword arguments: ' description', ' price', ' discount'
+2024-02-20 15:16:01,308 [ERROR] django.request: Internal Server Error: /admin/shopapp/product/import-products-csv/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py", line 93, in import_csv
+    products = [
+  File "/home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py", line 94, in <listcomp>
+    Product(**row)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Product() got unexpected keyword arguments: "'name'", " 'description'", " 'price'", " 'discount'"
+2024-02-21 07:06:43,590 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 07:06:49,648 [WARNING] django.request: Not Found: /
+2024-02-21 07:06:49,919 [WARNING] django.request: Not Found: /favicon.ico
+2024-02-21 07:07:00,951 [INFO] shopapp.views: Rendering shop index
+2024-02-21 07:07:58,865 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-21 07:07:59,261 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 07:09:38,997 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-21 07:09:39,350 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 07:11:34,012 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-21 07:11:34,461 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 07:33:24,204 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-21 07:33:24,726 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 07:33:37,563 [WARNING] django.request: Method Not Allowed: /shop/api/products/upload_csv/
+2024-02-21 07:38:32,117 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-21 07:38:32,456 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 07:38:34,009 [ERROR] django.request: Internal Server Error: /shop/api/products/upload_csv/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: shopapp_product.discount
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/shopapp/views.py", line 89, in upload_csv
+    products = save_csv_products(
+  File "/home/nikita/PycharmProjects/django_skillbox/shopapp/common.py", line 20, in save_csv_products
+    Product.objects.bulk_create(products)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 833, in bulk_create
+    returned_columns = self._batched_insert(
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1873, in _batched_insert
+    self._insert(
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1845, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/debug_toolbar/panels/sql/tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/debug_toolbar/panels/sql/tracking.py", line 160, in _record
+    return method(sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: shopapp_product.discount
+2024-02-21 07:39:47,386 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-21 07:39:47,843 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 07:39:51,490 [ERROR] django.request: Internal Server Error: /shop/api/products/upload_csv/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: shopapp_product.discount
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/shopapp/views.py", line 89, in upload_csv
+    products = save_csv_products(
+  File "/home/nikita/PycharmProjects/django_skillbox/shopapp/common.py", line 20, in save_csv_products
+    Product.objects.bulk_create(products)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 833, in bulk_create
+    returned_columns = self._batched_insert(
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1873, in _batched_insert
+    self._insert(
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1845, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/debug_toolbar/panels/sql/tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/debug_toolbar/panels/sql/tracking.py", line 160, in _record
+    return method(sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: shopapp_product.discount
+2024-02-21 14:12:16,699 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 14:12:40,277 [WARNING] django.request: Not Found: /favicon.ico
+2024-02-21 14:15:46,747 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/admin.py changed, reloading.
+2024-02-21 14:15:47,261 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 14:16:10,059 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/admin.py changed, reloading.
+2024-02-21 14:16:10,467 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 14:16:22,740 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/admin.py changed, reloading.
+2024-02-21 14:16:23,172 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 14:16:29,477 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/admin.py changed, reloading.
+2024-02-21 14:16:29,869 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 14:17:38,616 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/admin.py changed, reloading.
+2024-02-21 14:17:39,056 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 14:18:24,257 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/admin.py changed, reloading.
+2024-02-21 14:18:24,523 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 14:19:43,444 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/models.py changed, reloading.
+2024-02-21 14:19:43,885 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 14:19:53,233 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/models.py changed, reloading.
+2024-02-21 14:19:53,502 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 14:20:02,862 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/models.py changed, reloading.
+2024-02-21 14:20:03,307 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 14:20:12,695 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/models.py changed, reloading.
+2024-02-21 14:20:13,111 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 14:36:19,631 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/views.py changed, reloading.
+2024-02-21 14:36:20,037 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 14:39:04,299 [ERROR] django.request: Internal Server Error: /blog/articles/1/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: blogapp/article_detail.html
+2024-02-21 14:39:16,127 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/views.py changed, reloading.
+2024-02-21 14:39:16,529 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 14:39:29,897 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/views.py changed, reloading.
+2024-02-21 14:39:30,145 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 14:39:48,802 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/views.py changed, reloading.
+2024-02-21 14:39:49,060 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 14:52:43,818 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/views.py changed, reloading.
+2024-02-21 14:52:44,155 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 14:53:21,073 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/views.py changed, reloading.
+2024-02-21 14:53:21,408 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 14:53:36,829 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/views.py changed, reloading.
+2024-02-21 14:53:37,157 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 14:53:43,558 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/views.py changed, reloading.
+2024-02-21 14:53:43,969 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 14:54:01,532 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/views.py changed, reloading.
+2024-02-21 14:54:01,924 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 14:54:12,268 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/views.py changed, reloading.
+2024-02-21 14:54:12,718 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 14:54:17,940 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/views.py changed, reloading.
+2024-02-21 14:54:18,327 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 14:54:28,652 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/views.py changed, reloading.
+2024-02-21 14:54:29,037 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 14:54:53,682 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/views.py changed, reloading.
+2024-02-21 14:54:54,083 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 14:55:02,521 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/views.py changed, reloading.
+2024-02-21 14:55:02,939 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 14:55:14,459 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/views.py changed, reloading.
+2024-02-21 14:55:14,822 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 14:55:18,142 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/views.py changed, reloading.
+2024-02-21 14:55:18,543 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 14:55:23,861 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/views.py changed, reloading.
+2024-02-21 14:55:24,301 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 14:55:26,489 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/views.py changed, reloading.
+2024-02-21 14:55:26,900 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 14:55:30,226 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/views.py changed, reloading.
+2024-02-21 14:55:30,612 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 14:55:32,878 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/views.py changed, reloading.
+2024-02-21 14:55:33,250 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 14:55:37,535 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/views.py changed, reloading.
+2024-02-21 14:55:37,933 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 15:02:48,811 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/views.py changed, reloading.
+2024-02-21 15:02:49,235 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 15:03:51,894 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/views.py changed, reloading.
+2024-02-21 15:03:52,313 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 15:03:54,620 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/views.py changed, reloading.
+2024-02-21 15:03:55,066 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 15:04:19,714 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/views.py changed, reloading.
+2024-02-21 15:04:20,040 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 15:08:38,167 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/views.py changed, reloading.
+2024-02-21 15:08:38,544 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 15:08:54,178 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/views.py changed, reloading.
+2024-02-21 15:08:54,595 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 15:09:04,952 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/views.py changed, reloading.
+2024-02-21 15:09:05,345 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 15:09:13,637 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/views.py changed, reloading.
+2024-02-21 15:09:14,037 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 15:09:52,000 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/views.py changed, reloading.
+2024-02-21 15:09:52,451 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 15:10:20,376 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/views.py changed, reloading.
+2024-02-21 15:10:20,761 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 15:10:35,331 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/views.py changed, reloading.
+2024-02-21 15:10:35,714 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 15:10:38,914 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/views.py changed, reloading.
+2024-02-21 15:10:39,312 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 15:10:45,697 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/views.py changed, reloading.
+2024-02-21 15:10:46,127 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 15:11:24,259 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/views.py changed, reloading.
+2024-02-21 15:11:24,651 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 15:12:05,750 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/urls.py changed, reloading.
+2024-02-21 15:12:06,200 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 15:12:18,591 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/urls.py changed, reloading.
+2024-02-21 15:12:18,894 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 15:12:47,727 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/urls.py changed, reloading.
+2024-02-21 15:12:48,525 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 15:13:11,652 [ERROR] django.request: Internal Server Error: /blog/articles/latest/feed/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: LatestArticlesFeed() takes no arguments
+2024-02-21 15:14:07,848 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/urls.py changed, reloading.
+2024-02-21 15:14:08,578 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 20:38:13,303 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 21:52:01,379 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 21:52:08,847 [WARNING] django.request: Not Found: /favicon.ico
+2024-02-21 21:52:21,921 [ERROR] django.request: Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/sitemaps/views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/sitemaps/views.py", line 121, in sitemap
+    lastmod = _get_latest_lastmod(lastmod, site_lastmod)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/sitemaps/views.py", line 36, in _get_latest_lastmod
+    new_lastmod = datetime.datetime.combine(new_lastmod, datetime.time.min)
+TypeError: combine() argument 1 must be datetime.date, not int
+2024-02-21 21:53:18,465 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/django_skillbox/settings.py changed, reloading.
+2024-02-21 21:53:18,826 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 21:53:38,113 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/django_skillbox/settings.py changed, reloading.
+2024-02-21 21:53:38,576 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-21 21:53:41,624 [ERROR] django.request: Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/sitemaps/views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/sitemaps/views.py", line 121, in sitemap
+    lastmod = _get_latest_lastmod(lastmod, site_lastmod)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/sitemaps/views.py", line 36, in _get_latest_lastmod
+    new_lastmod = datetime.datetime.combine(new_lastmod, datetime.time.min)
+TypeError: combine() argument 1 must be datetime.date, not int
+2024-02-21 21:53:42,972 [ERROR] django.request: Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/sitemaps/views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/sitemaps/views.py", line 121, in sitemap
+    lastmod = _get_latest_lastmod(lastmod, site_lastmod)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/sitemaps/views.py", line 36, in _get_latest_lastmod
+    new_lastmod = datetime.datetime.combine(new_lastmod, datetime.time.min)
+TypeError: combine() argument 1 must be datetime.date, not int
+2024-02-21 21:55:06,829 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/blogapp/sitemap.py changed, reloading.
+2024-02-21 21:55:07,188 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-22 12:22:38,129 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-22 12:23:01,221 [WARNING] django.request: Not Found: /favicon.ico
+2024-02-22 12:23:09,577 [INFO] shopapp.views: Rendering shop index
+2024-02-22 12:32:18,829 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-22 12:32:19,278 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-23 10:28:30,817 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-23 10:28:40,342 [WARNING] django.request: Not Found: /favicon.ico
+2024-02-23 10:29:40,625 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/sitemap.py changed, reloading.
+2024-02-23 10:29:41,043 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-23 10:39:34,303 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-23 10:39:34,690 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-23 10:39:38,008 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-23 10:39:38,436 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-23 10:41:33,939 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-23 10:41:34,207 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-23 10:49:13,554 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-23 10:49:13,882 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-23 10:51:50,496 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/urls.py changed, reloading.
+2024-02-23 10:51:50,961 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-23 10:51:57,271 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/urls.py changed, reloading.
+2024-02-23 10:51:57,693 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-23 10:53:41,777 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/urls.py changed, reloading.
+2024-02-23 10:53:42,094 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-23 10:54:00,989 [WARNING] django.request: Not Found: /shop/products/lasest/feed
+2024-02-23 10:54:09,823 [ERROR] django.request: Internal Server Error: /shop/products/latest/feed/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: LatestProductsFeed() takes no arguments
+2024-02-23 10:54:25,490 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/urls.py changed, reloading.
+2024-02-23 10:54:25,842 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-23 12:19:34,863 [WARNING] django.request: Not Found: /admin/csv_form
+2024-02-23 12:25:29,896 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-23 12:25:30,168 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-23 12:27:22,417 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-23 12:27:22,716 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-23 12:29:28,717 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-23 12:29:29,059 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-23 12:30:13,287 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-23 12:30:13,631 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-23 12:32:09,428 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin_mixins.py changed, reloading.
+2024-02-23 12:32:09,740 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-23 12:39:14,112 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-23 12:39:14,534 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-23 12:39:36,998 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-23 12:39:37,397 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-23 12:39:46,869 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-23 12:39:47,190 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-23 12:40:00,750 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-23 12:40:01,181 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-23 12:40:45,639 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-23 12:40:45,917 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-23 12:41:09,368 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-23 12:41:09,714 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-23 12:41:22,246 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-23 12:41:22,575 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-23 12:41:32,909 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-23 12:41:33,267 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-23 12:41:39,630 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-23 12:41:39,859 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-23 12:41:42,017 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-23 12:41:42,369 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-23 12:41:57,724 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-23 12:41:58,051 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-23 12:42:09,394 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-23 12:42:09,769 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-23 12:43:18,519 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-23 12:43:18,876 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-23 12:44:02,548 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-23 12:44:02,937 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-23 12:44:30,682 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-23 12:44:30,978 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-23 12:44:40,430 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-23 12:44:40,814 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-23 12:44:51,167 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-23 12:44:51,571 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-23 12:46:06,308 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-23 12:46:06,710 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-23 12:46:36,522 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-23 12:46:36,823 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-23 12:49:54,576 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-23 12:49:54,991 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-23 12:49:58,163 [ERROR] django.request: Internal Server Error: /admin/shopapp/order/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 74, in resolve_template
+    return get_template(template, using=self.using)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: shopapp/orders_changelist
+2024-02-23 12:50:08,638 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-23 12:50:09,004 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-23 12:57:11,748 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-23 12:57:12,195 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-23 13:00:50,264 [ERROR] django.request: Internal Server Error: /admin/shopapp/order/import-orders-csv/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py", line 137, in import_csv
+    save_csv_products(
+  File "/home/nikita/PycharmProjects/django_skillbox/shopapp/common.py", line 15, in save_csv_products
+    products = [
+  File "/home/nikita/PycharmProjects/django_skillbox/shopapp/common.py", line 16, in <listcomp>
+    Product(**row)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Product() got unexpected keyword arguments: 'delivery_address', 'promocode'
+2024-02-24 13:55:14,640 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 13:56:11,765 [ERROR] django.request: Internal Server Error: /admin/shopapp/order/import-orders-csv/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py", line 137, in import_csv
+    save_csv_products(
+  File "/home/nikita/PycharmProjects/django_skillbox/shopapp/common.py", line 15, in save_csv_products
+    products = [
+  File "/home/nikita/PycharmProjects/django_skillbox/shopapp/common.py", line 16, in <listcomp>
+    Product(**row)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Product() got unexpected keyword arguments: 'delivery_address', 'promocode'
+2024-02-24 13:56:11,938 [WARNING] django.request: Not Found: /favicon.ico
+2024-02-24 14:03:13,658 [ERROR] django.request: Internal Server Error: /admin/shopapp/order/import-orders-csv/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py", line 137, in import_csv
+    save_csv_products(
+  File "/home/nikita/PycharmProjects/django_skillbox/shopapp/common.py", line 15, in save_csv_products
+    products = [
+  File "/home/nikita/PycharmProjects/django_skillbox/shopapp/common.py", line 16, in <listcomp>
+    Product(**row)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Product() got unexpected keyword arguments: 'delivery_address', 'promocode', 'user', 'receipt'
+2024-02-24 14:05:18,453 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin_mixins.py changed, reloading.
+2024-02-24 14:05:18,711 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 14:05:40,376 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin_mixins.py changed, reloading.
+2024-02-24 14:05:40,625 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 14:05:56,913 [ERROR] django.request: Internal Server Error: /admin/shopapp/order/import-orders-csv/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py", line 137, in import_csv
+    save_csv_products(
+  File "/home/nikita/PycharmProjects/django_skillbox/shopapp/common.py", line 15, in save_csv_products
+    products = [
+  File "/home/nikita/PycharmProjects/django_skillbox/shopapp/common.py", line 16, in <listcomp>
+    Product(**row)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Product() got unexpected keyword arguments: 'delivery_address', 'promocode', 'user', 'receipt'
+2024-02-24 14:06:55,189 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin_mixins.py changed, reloading.
+2024-02-24 14:06:55,515 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 14:29:13,419 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py changed, reloading.
+2024-02-24 14:29:14,021 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 14:30:23,638 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/common.py changed, reloading.
+2024-02-24 14:30:23,978 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 14:33:15,464 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/common.py changed, reloading.
+2024-02-24 14:33:16,051 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 14:33:21,586 [ERROR] django.request: Internal Server Error: /admin/shopapp/order/import-orders-csv/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/shopapp/admin.py", line 137, in import_csv
+    save_csv_orders(
+  File "/home/nikita/PycharmProjects/django_skillbox/shopapp/common.py", line 32, in save_csv_orders
+    orders = [
+  File "/home/nikita/PycharmProjects/django_skillbox/shopapp/common.py", line 33, in <listcomp>
+    Order(**row)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/base.py", line 543, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/fields/related_descriptors.py", line 283, in __set__
+    raise ValueError(
+ValueError: Cannot assign "'2'": "Order.user" must be a "User" instance.
+2024-02-24 17:41:18,086 [WARNING] django.request: Not Found: /favicon.ico
+2024-02-24 17:48:18,096 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/django_skillbox/settings.py changed, reloading.
+2024-02-24 17:48:18,437 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 17:48:29,934 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/django_skillbox/settings.py changed, reloading.
+2024-02-24 17:56:44,693 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 17:56:59,693 [WARNING] django.request: Not Found: /
+2024-02-24 17:57:04,052 [INFO] shopapp.views: Rendering shop index
+2024-02-24 17:58:00,653 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-24 17:58:01,036 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 17:59:55,769 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-24 17:59:56,264 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 18:00:39,597 [INFO] shopapp.views: Rendering shop index
+2024-02-24 18:04:24,878 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/django_skillbox/settings.py changed, reloading.
+2024-02-24 18:04:25,188 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 18:24:02,274 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/myauth/views.py changed, reloading.
+2024-02-24 18:24:02,824 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 18:24:19,411 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/myauth/views.py changed, reloading.
+2024-02-24 18:24:19,777 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 18:24:48,492 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/myauth/views.py changed, reloading.
+2024-02-24 18:24:48,779 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 18:26:30,571 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/myauth/views.py changed, reloading.
+2024-02-24 18:26:30,966 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 18:28:49,304 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/urls.py changed, reloading.
+2024-02-24 18:28:49,697 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 18:29:07,259 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/urls.py changed, reloading.
+2024-02-24 18:29:07,701 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 18:29:24,769 [INFO] shopapp.views: Rendering shop index
+2024-02-24 18:31:46,100 [INFO] shopapp.views: Rendering shop index
+2024-02-24 18:33:57,806 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-24 18:33:58,279 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 18:34:04,666 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-24 18:34:04,936 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 18:34:17,409 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-24 18:34:17,745 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 18:34:49,660 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-24 18:34:50,045 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 18:34:55,250 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-24 18:34:55,657 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 18:35:23,335 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-24 18:35:23,764 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 18:35:34,206 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-24 18:35:34,616 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 18:35:42,881 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-24 18:35:43,324 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 18:36:10,013 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-24 18:36:10,484 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 18:37:13,876 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-24 18:37:14,317 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 18:37:51,407 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-24 18:37:51,850 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 18:38:45,314 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-24 18:38:45,726 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 19:03:16,472 [INFO] shopapp.views: Rendering shop index
+2024-02-24 19:03:32,268 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/urls.py changed, reloading.
+2024-02-24 19:03:32,586 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 19:03:33,032 [INFO] shopapp.views: Rendering shop index
+2024-02-24 19:03:33,590 [INFO] shopapp.views: Rendering shop index
+2024-02-24 19:03:34,128 [INFO] shopapp.views: Rendering shop index
+2024-02-24 19:04:42,549 [INFO] shopapp.views: Rendering shop index
+2024-02-24 19:04:43,369 [INFO] shopapp.views: Rendering shop index
+2024-02-24 19:04:44,034 [INFO] shopapp.views: Rendering shop index
+2024-02-24 19:04:44,782 [INFO] shopapp.views: Rendering shop index
+2024-02-24 19:09:40,197 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/myauth/urls.py changed, reloading.
+2024-02-24 19:09:40,529 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 19:13:20,281 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/myauth/views.py changed, reloading.
+2024-02-24 19:13:20,623 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 19:13:43,212 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/myauth/urls.py changed, reloading.
+2024-02-24 19:13:43,472 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 19:14:05,124 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/myauth/views.py changed, reloading.
+2024-02-24 19:14:05,447 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 19:14:35,822 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 19:18:00,962 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/myauth/views.py changed, reloading.
+2024-02-24 19:18:01,470 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 19:25:03,355 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 19:25:10,635 [WARNING] django.request: Not Found: /favicon.ico
+2024-02-24 19:28:21,824 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/myauth/views.py changed, reloading.
+2024-02-24 19:28:22,281 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 21:52:53,083 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-24 21:52:53,639 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 21:53:55,397 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-24 21:53:55,877 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 21:54:48,390 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-24 21:54:49,078 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 21:54:53,443 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-24 21:54:53,756 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 21:55:01,159 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-24 21:55:01,589 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 21:55:16,204 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-24 21:55:16,743 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 21:55:59,919 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-24 21:56:00,242 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 21:56:04,616 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-24 21:56:05,055 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 21:56:20,800 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-24 21:56:21,272 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 21:59:51,286 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/django_skillbox/settings.py changed, reloading.
+2024-02-24 21:59:51,791 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-24 22:00:08,245 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/django_skillbox/settings.py changed, reloading.
+2024-02-24 22:00:08,674 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 10:34:47,595 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 10:40:41,662 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/models.py changed, reloading.
+2024-02-25 10:40:42,074 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 10:40:57,681 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/models.py changed, reloading.
+2024-02-25 10:40:58,034 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 10:42:51,851 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/models.py changed, reloading.
+2024-02-25 10:42:52,172 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 10:52:32,898 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 10:52:33,363 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 10:59:27,545 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 10:59:28,069 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 10:59:41,617 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 10:59:41,977 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 11:00:17,593 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 11:00:18,022 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 11:00:25,283 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 11:00:25,799 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 11:00:33,108 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 11:00:33,571 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 11:00:43,099 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 11:00:43,455 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 11:00:48,813 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 11:00:49,192 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 11:00:56,529 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 11:00:56,827 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 11:01:06,142 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 11:01:06,546 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 11:01:52,760 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/urls.py changed, reloading.
+2024-02-25 11:01:53,196 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 11:02:04,713 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/urls.py changed, reloading.
+2024-02-25 11:02:05,120 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 11:02:25,691 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/urls.py changed, reloading.
+2024-02-25 11:02:25,945 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 11:04:27,345 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/urls.py changed, reloading.
+2024-02-25 11:04:27,798 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 11:07:23,800 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 11:07:24,070 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 11:07:37,455 [WARNING] django.request: Not Found: /favicon.ico
+2024-02-25 11:08:15,451 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 11:08:15,812 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 11:25:04,591 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 11:25:05,005 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 11:26:04,461 [ERROR] django.request: Internal Server Error: /shop/users/1/orders/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/base.py", line 510, in parse
+    raise self.error(token, e)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/base.py", line 510, in parse
+    raise self.error(token, e)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/base.py", line 481, in parse
+    raise self.error(token, e)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '[0].user.pk' from 'orders[0].user.pk'
+2024-02-25 11:42:12,847 [ERROR] django.request: Internal Server Error: /shop/users/1/orders/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/test/utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/test/utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 241, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 196, in render
+    values = list(values)
+TypeError: 'ManyRelatedManager' object is not iterable
+2024-02-25 11:49:26,974 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 11:49:27,418 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 11:50:50,859 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 11:50:51,200 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 11:54:49,398 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 11:54:49,774 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 11:55:16,387 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 11:55:16,768 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 11:55:40,301 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 11:55:40,601 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 11:55:56,049 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 11:55:56,530 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 11:55:57,642 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 11:55:58,069 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 11:56:04,518 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 11:56:04,866 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 11:56:24,500 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 11:56:24,869 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 11:57:13,294 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 11:57:13,604 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 11:57:15,169 [WARNING] django.request: Not Found: /shop/users/100/orders/
+2024-02-25 11:57:20,732 [WARNING] django.request: Not Found: /shop/users/10/orders/
+2024-02-25 12:12:33,347 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 12:12:33,896 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 12:13:01,710 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 12:13:02,104 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 12:14:28,501 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 12:14:28,748 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 12:34:56,843 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 12:34:57,296 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 12:42:45,710 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 12:42:46,056 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 12:43:22,098 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/urls.py changed, reloading.
+2024-02-25 12:43:22,497 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 12:45:47,297 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/urls.py changed, reloading.
+2024-02-25 12:45:47,713 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 12:50:57,284 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 12:50:57,653 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 12:51:13,220 [ERROR] django.request: Internal Server Error: /shop/users/1/orders/export/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: UserOrderExportView.get() got an unexpected keyword argument 'user_id'
+2024-02-25 12:56:53,897 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 12:56:54,205 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 12:59:55,434 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 12:59:55,844 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 12:59:59,502 [ERROR] django.request: Internal Server Error: /shop/users/1/orders/export/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: UserOrderExportView.get() got an unexpected keyword argument 'user_id'
+2024-02-25 13:00:14,505 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:00:14,846 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:00:29,546 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:00:29,815 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:00:43,248 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:00:43,515 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:00:44,301 [ERROR] django.request: Internal Server Error: /shop/users/1/orders/export/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: UserOrderExportView.get() got an unexpected keyword argument 'user_id'
+2024-02-25 13:04:33,600 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:04:33,943 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:17:48,298 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:17:48,662 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:18:05,286 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:18:05,681 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:18:14,104 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:18:14,535 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:18:24,876 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:18:25,273 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:18:37,831 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:18:38,086 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:20:29,700 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:20:29,983 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:20:32,625 [ERROR] django.request: Internal Server Error: /shop/users/1/orders/export/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: UserOrderExportView.get() got an unexpected keyword argument 'user_id'
+2024-02-25 13:20:34,098 [ERROR] django.request: Internal Server Error: /shop/users/1/orders/export/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: UserOrderExportView.get() got an unexpected keyword argument 'user_id'
+2024-02-25 13:21:08,097 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:21:08,464 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:21:09,468 [ERROR] django.request: Internal Server Error: /shop/users/1/orders/export/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: UserOrderExportView.get() got an unexpected keyword argument 'user_id'
+2024-02-25 13:21:51,776 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:21:52,089 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:21:52,454 [ERROR] django.request: Internal Server Error: /shop/users/1/orders/export/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: UserOrderExportView.get() got an unexpected keyword argument 'user_id'
+2024-02-25 13:22:10,692 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:22:11,049 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:22:22,899 [ERROR] django.request: Internal Server Error: /shop/users/1/orders/export/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: UserOrderExportView.get() got an unexpected keyword argument 'user_id'
+2024-02-25 13:23:35,077 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:23:35,391 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:23:38,496 [ERROR] django.request: Internal Server Error: /shop/users/1/orders/export/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: UserOrderExportView.get() got an unexpected keyword argument 'user_id'
+2024-02-25 13:25:20,408 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:25:20,726 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:25:23,830 [ERROR] django.request: Internal Server Error: /shop/users/1/orders/export/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: UserOrderExportView.get() got an unexpected keyword argument 'user_id'
+2024-02-25 13:25:50,637 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:25:50,895 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:25:55,100 [ERROR] django.request: Internal Server Error: /shop/users/1/orders/export/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: UserOrderExportView.get() got an unexpected keyword argument 'user_id'
+2024-02-25 13:26:29,952 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/urls.py changed, reloading.
+2024-02-25 13:26:30,297 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:28:50,500 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:28:50,848 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:30:11,725 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:30:12,065 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:30:15,542 [ERROR] django.request: Internal Server Error: /shop/users/1/orders/export/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: UserOrderExportView.get() got an unexpected keyword argument 'user_id'
+2024-02-25 13:30:19,421 [ERROR] django.request: Internal Server Error: /shop/users/1/orders/export/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: UserOrderExportView.get() got an unexpected keyword argument 'user_id'
+2024-02-25 13:30:28,771 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:30:29,080 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:30:29,942 [ERROR] django.request: Internal Server Error: /shop/users/1/orders/export/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: UserOrderExportView.get() got an unexpected keyword argument 'user_id'
+2024-02-25 13:31:19,655 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:31:19,924 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:31:20,788 [ERROR] django.request: Internal Server Error: /shop/users/1/orders/export/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: UserOrderExportView.get() got an unexpected keyword argument 'user_id'
+2024-02-25 13:48:14,618 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/urls.py changed, reloading.
+2024-02-25 13:48:14,997 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:48:32,735 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/urls.py changed, reloading.
+2024-02-25 13:48:33,020 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:48:40,873 [ERROR] django.request: Internal Server Error: /shop/orders/1/export/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: UserOrderExportView.get() got an unexpected keyword argument 'user_id'
+2024-02-25 13:48:56,794 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:48:57,127 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:49:03,372 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:49:03,753 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:49:14,149 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:49:14,587 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:49:22,973 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:49:23,412 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:49:26,611 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:49:26,922 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:49:33,135 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:49:33,597 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:49:43,966 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:49:44,393 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:49:48,561 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:49:48,824 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:49:53,044 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:49:53,475 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:49:58,678 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:49:59,069 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:50:02,235 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:50:02,616 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:50:06,925 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:50:07,354 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:50:13,631 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:50:14,085 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:50:37,772 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:50:38,204 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:50:45,584 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:50:46,060 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:50:51,249 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:50:51,553 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:50:54,725 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:50:55,145 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:51:01,364 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:51:01,721 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:51:08,162 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:51:08,521 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:51:24,013 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:51:24,439 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:51:28,732 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:51:29,095 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:51:37,460 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:51:37,776 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:51:48,099 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:51:48,424 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:51:57,256 [ERROR] django.request: Internal Server Error: /shop/orders/1/export/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/test/utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/test/utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 478, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/urls/resolvers.py", line 848, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'order_update' with keyword arguments '{'pk': ''}' not found. 1 pattern(s) tried: ['shop/orders/(?P<pk>[0-9]+)/update/\\Z']
+2024-02-25 13:54:21,869 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:54:22,138 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:55:12,704 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:55:13,081 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:56:34,198 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:56:34,528 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:57:55,363 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:57:55,724 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:57:59,033 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:57:59,393 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:58:06,179 [ERROR] django.request: Internal Server Error: /shop/orders/1/export/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: UserOrderExportView.get() got an unexpected keyword argument 'user_id'
+2024-02-25 13:59:13,604 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:59:13,855 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:59:21,120 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:59:21,512 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:59:29,874 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:59:30,204 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 13:59:38,561 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 13:59:38,982 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 14:01:45,188 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 14:01:45,671 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 14:03:18,709 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 14:03:19,052 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-02-25 14:03:24,534 [ERROR] django.request: Internal Server Error: /shop/orders/1/export/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/shopapp/views.py", line 369, in get
+    cache.set(cache_key)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/debug_toolbar/panels/cache.py", line 42, in wrapper
+    return panel._record_call(cache, name, original_method, args, kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/debug_toolbar/panels/cache.py", line 149, in _record_call
+    value = original_method(*args, **kwargs)
+TypeError: FileBasedCache.set() missing 1 required positional argument: 'value'
+2024-02-25 14:03:55,163 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
+2024-02-25 14:03:55,519 [INFO] django.utils.autoreload: Watching for file changes with StatReloader

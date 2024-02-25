@@ -1,0 +1,13 @@
+{% extends 'shopapp/base.html' %}
+
+{% block title %}
+    User Order Export
+{% endblock %}
+
+{% block body %}
+    <h1>Export Order</h1>
+    <form method="get">
+        {% csrf_token %}
+        {{ form.as_p }}
+    </form>
+{% endblock %}
