@@ -1572,3 +1572,534 @@ Traceback (most recent call last):
 TypeError: FileBasedCache.set() missing 1 required positional argument: 'value'
 2024-02-25 14:03:55,163 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/shopapp/views.py changed, reloading.
 2024-02-25 14:03:55,519 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-03-14 17:31:33,468 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-03-14 17:32:39,109 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/django_skillbox/settings.py changed, reloading.
+2024-03-14 17:32:39,422 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-03-14 17:33:25,878 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/django_skillbox/settings.py changed, reloading.
+2024-03-14 17:33:26,231 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-03-14 17:35:07,012 [INFO] django.utils.autoreload: /home/nikita/PycharmProjects/django_skillbox/django_skillbox/settings.py changed, reloading.
+2024-03-14 17:35:36,972 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-03-14 17:35:45,687 [ERROR] django.request: Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/sessions/backends/base.py", line 187, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: django_session
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/debug_toolbar/middleware.py", line 69, in __call__
+    panel.generate_stats(request, response)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/debug_toolbar/panels/request.py", line 64, in generate_stats
+    (k, request.session.get(k)) for k in sorted(request.session.keys())
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/sessions/backends/base.py", line 123, in keys
+    return self._session.keys()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/sessions/backends/base.py", line 192, in _get_session
+    self._session_cache = self.load()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/sessions/backends/db.py", line 42, in load
+    s = self._get_session_from_db()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/sessions/backends/db.py", line 32, in _get_session_from_db
+    return self.model.objects.get(
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 643, in get
+    num = len(clone)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 380, in __len__
+    self._fetch_all()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1926, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: django_session
+2024-03-14 17:35:45,843 [ERROR] django.request: Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/sessions/backends/base.py", line 187, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: django_session
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/debug_toolbar/middleware.py", line 69, in __call__
+    panel.generate_stats(request, response)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/debug_toolbar/panels/request.py", line 64, in generate_stats
+    (k, request.session.get(k)) for k in sorted(request.session.keys())
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/sessions/backends/base.py", line 123, in keys
+    return self._session.keys()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/sessions/backends/base.py", line 192, in _get_session
+    self._session_cache = self.load()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/sessions/backends/db.py", line 42, in load
+    s = self._get_session_from_db()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/sessions/backends/db.py", line 32, in _get_session_from_db
+    return self.model.objects.get(
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 643, in get
+    num = len(clone)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 380, in __len__
+    self._fetch_all()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1926, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: django_session
+2024-03-14 17:35:49,238 [ERROR] django.request: Internal Server Error: /myauth/login/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/sessions/backends/base.py", line 187, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: django_session
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/decorators/debug.py", line 141, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/auth/views.py", line 80, in dispatch
+    if self.redirect_authenticated_user and self.request.user.is_authenticated:
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/utils/functional.py", line 251, in inner
+    self._setup()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/utils/functional.py", line 404, in _setup
+    self._wrapped = self._setupfunc()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/auth/middleware.py", line 33, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/auth/middleware.py", line 13, in get_user
+    request._cached_user = auth.get_user(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/auth/__init__.py", line 209, in get_user
+    user_id = _get_user_session_key(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/auth/__init__.py", line 62, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/sessions/backends/base.py", line 53, in __getitem__
+    return self._session[key]
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/sessions/backends/base.py", line 192, in _get_session
+    self._session_cache = self.load()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/sessions/backends/db.py", line 42, in load
+    s = self._get_session_from_db()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/sessions/backends/db.py", line 32, in _get_session_from_db
+    return self.model.objects.get(
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 643, in get
+    num = len(clone)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 380, in __len__
+    self._fetch_all()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1926, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/debug_toolbar/panels/sql/tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/debug_toolbar/panels/sql/tracking.py", line 160, in _record
+    return method(sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: django_session
+2024-03-14 17:35:49,329 [ERROR] django.request: Internal Server Error: /myauth/login/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/sessions/backends/base.py", line 187, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: django_session
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/debug_toolbar/middleware.py", line 69, in __call__
+    panel.generate_stats(request, response)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/debug_toolbar/panels/request.py", line 64, in generate_stats
+    (k, request.session.get(k)) for k in sorted(request.session.keys())
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/sessions/backends/base.py", line 123, in keys
+    return self._session.keys()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/sessions/backends/base.py", line 192, in _get_session
+    self._session_cache = self.load()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/sessions/backends/db.py", line 42, in load
+    s = self._get_session_from_db()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/sessions/backends/db.py", line 32, in _get_session_from_db
+    return self.model.objects.get(
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 643, in get
+    num = len(clone)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 380, in __len__
+    self._fetch_all()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1926, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: django_session
+2024-03-14 17:35:49,419 [ERROR] django.request: Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/sessions/backends/base.py", line 187, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: django_session
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/debug_toolbar/middleware.py", line 69, in __call__
+    panel.generate_stats(request, response)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/debug_toolbar/panels/request.py", line 64, in generate_stats
+    (k, request.session.get(k)) for k in sorted(request.session.keys())
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/sessions/backends/base.py", line 123, in keys
+    return self._session.keys()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/sessions/backends/base.py", line 192, in _get_session
+    self._session_cache = self.load()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/sessions/backends/db.py", line 42, in load
+    s = self._get_session_from_db()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/sessions/backends/db.py", line 32, in _get_session_from_db
+    return self.model.objects.get(
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 643, in get
+    num = len(clone)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 380, in __len__
+    self._fetch_all()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1926, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: django_session
+2024-03-14 17:36:52,796 [ERROR] django.request: Internal Server Error: /shop/products/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: shopapp_product
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/test/utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/test/utils.py", line 111, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 324, in render
+    if match:
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 412, in __bool__
+    self._fetch_all()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1926, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/debug_toolbar/panels/sql/tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/debug_toolbar/panels/sql/tracking.py", line 160, in _record
+    return method(sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: shopapp_product
+2024-03-14 17:36:52,884 [ERROR] django.request: Internal Server Error: /shop/products/
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/sessions/backends/base.py", line 187, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: django_session
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/debug_toolbar/middleware.py", line 69, in __call__
+    panel.generate_stats(request, response)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/debug_toolbar/panels/request.py", line 64, in generate_stats
+    (k, request.session.get(k)) for k in sorted(request.session.keys())
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/sessions/backends/base.py", line 123, in keys
+    return self._session.keys()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/sessions/backends/base.py", line 192, in _get_session
+    self._session_cache = self.load()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/sessions/backends/db.py", line 42, in load
+    s = self._get_session_from_db()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/sessions/backends/db.py", line 32, in _get_session_from_db
+    return self.model.objects.get(
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 643, in get
+    num = len(clone)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 380, in __len__
+    self._fetch_all()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1926, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: django_session
+2024-03-14 17:36:53,026 [ERROR] django.request: Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/sessions/backends/base.py", line 187, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: django_session
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/debug_toolbar/middleware.py", line 69, in __call__
+    panel.generate_stats(request, response)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/debug_toolbar/panels/request.py", line 64, in generate_stats
+    (k, request.session.get(k)) for k in sorted(request.session.keys())
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/sessions/backends/base.py", line 123, in keys
+    return self._session.keys()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/sessions/backends/base.py", line 192, in _get_session
+    self._session_cache = self.load()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/sessions/backends/db.py", line 42, in load
+    s = self._get_session_from_db()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/contrib/sessions/backends/db.py", line 32, in _get_session_from_db
+    return self.model.objects.get(
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 643, in get
+    num = len(clone)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 380, in __len__
+    self._fetch_all()
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1926, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/nikita/PycharmProjects/django_skillbox/.venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: django_session
+2024-03-14 17:38:01,601 [WARNING] django.request: Not Found: /favicon.ico

@@ -8,10 +8,12 @@ docutils==0.20.1
 drf-spectacular==0.27.1
 flake8==7.0.0
 flake8-docstrings==1.7.0
+gunicorn==21.2.0
 inflection==0.5.1
 jsonschema==4.21.1
 jsonschema-specifications==2023.12.1
 mccabe==0.7.0
+packaging==23.2
 pillow==10.2.0
 pycodestyle==2.11.1
 pydocstyle==6.3.0

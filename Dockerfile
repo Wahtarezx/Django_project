@@ -9,6 +9,6 @@ COPY requirements.txt requirements.txt
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
-COPY . .
+COPY django_skillbox .
 
-CMD ["python", "manage.py", "runserver"]
+CMD ["gunicorn", "django_skillbox.wsgi:application", "--bind", "0.0.0.0:8000"]
